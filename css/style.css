@@ -1,0 +1,277 @@
+:root {
+    --primary-color: #004D43; /* Dark teal */
+    --secondary-color: #009688; /* Bright teal */
+    --text-light: #FFFFFF; /* White text */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+body {
+    background-color: #002E27; /* Deep green */
+    color: var(--text-light);
+    font-family: 'copperplate gothic 29 bc';
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar and Homepage Unified */
+.navbar-homepage {
+    position: relative;
+    background: linear-gradient(135deg, #004D43, #002E27); /* Gradient background */
+    box-shadow: 0 8px 15px var(--shadow-color); /* 3D Shadow */
+    padding: 15px 0;
+}
+.heading{
+    color: var(--text-light);
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand img {
+    height: 100px;
+    padding:5px;
+}
+
+.navbar .nav-link {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px var(--secondary-color);
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    height: 450px;
+    object-fit: cover;
+}
+.carourtext{
+    font-family: 'copperplate gothic 29 bc';
+    color: var(--text-light);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px var(--shadow-color);
+    font-family: 'copperplate gothic 29 bc';
+    flood-color: (--text-light);
+
+}
+
+/* Tagline with 3D Effect */
+.tagline {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text-light);
+    margin: 20px 0;
+    text-shadow: 3px 3px 5px var(--shadow-color), 0 0 15px var(--secondary-color);
+    background: linear-gradient(45deg, #4CCD99, #007F73);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Search Bar */
+.search-bar {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px var(--shadow-color), inset 0 3px 5px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+   
+}
+
+.search-bar .form-label {
+    color: var(--text-light);
+}
+
+.search-bar button {
+    background: var(--secondary-color);
+    border: none;
+    color: var(--text-light);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--secondary-color);
+}
+/* General Styling for Text */
+h3, h2, h5 {
+    font-family: 'Anton', sans-serif;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Container for Amenities Section */
+.container.my-5 {
+    background-color: #004D43; /* Dark green background */
+    padding: 50px 30px;
+    color: #ffffff; /* White text */
+}
+
+/* Title for the Section */
+.text-center {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Styles in the Amenities Section */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #00695c, #004d43); /* Gradient for depth */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), inset 0 -3px 6px rgba(255, 255, 255, 0.1); /* Outer and inner shadow */
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and enlarge */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), inset 0 -5px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Card Body */
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title and Text */
+.card-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Image Styles */
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2)); /* Add shadow to the image */
+}
+
+/* Animation for a Dynamic Look */
+.card img:hover {
+    transform: scale(1.1) rotate(5deg); /* Slightly enlarge and tilt */
+    transition: transform 0.3s ease;
+}
+
+
+/* About Us Section */
+#aboutUs {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+#aboutUs h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#aboutUs p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444444;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* FAQ Accordion Styling */
+.accordion-button {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: var(--primary-color);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    background-color: transparent;
+}
+
+.accordion-body {
+    background-color: #f0f0f0;
+    padding: 15px;
+    font-size: 1rem;
+    color: #555555;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: #e0f7f3; /* Light green background for active button */
+}
+
+.accordion-button.collapsed {
+    color: var(--primary-color);
+    background-color: #ffffff;
+}
+
+.accordion-body strong {
+    color: var(--primary-color);
+}
+
+/* Custom Styling for the Accordion */
+.accordion-button {
+    text-align: left;
+}
+
+.accordion-button::after {
+    content: "+" !important;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.accordion-button.collapsed::after {
+    content: "-" !important;
+    color: var(--primary-color);
+}
+
